@@ -10,6 +10,13 @@
     overflow: hidden;
 }
 
+body {
+    background-image: url("./Assets/bg-2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -36,12 +43,9 @@ nav img {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    height: 100vh;
+    min-height: 80vh;
     width: 100%;
-    background-color: wheat;
-    background-image: url("./Assets/bg-2.jpg");
-    background-position: center;
-    background-size: cover;
+
 }
 
 
@@ -81,10 +85,10 @@ input {
     border-radius: 15px;
     outline: none;
     border: none;
-    background: none;
     padding-left: 10px;
     color: rgb(121, 101, 101);
     caret-color: red;
+    background: none;
 }
 
 
@@ -155,10 +159,18 @@ sub {
         transition: all ease-in-out 0.3s;
         height: 40px;
     }
+
+    .container {
+        min-height: 70vh;
+    }
 }
 
 @media (max-width:360px) {
     form {
         width: 300px;
+    }
+
+    .container {
+        min-height: 60vh;
     }
 }
