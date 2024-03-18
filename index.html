@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>Welcome to my Weather app</h1>
+            <img src="./Assets/NavImage.png" alt="image">
+        </nav>
+        <div class="all-section">
+            <form onsubmit="console.log(input.value);">
+                <input id="searchBox" value="" type="search" required placeholder="Enter city name">
+                <button class="submit">
+                    🔍
+                </button>
+            </form>
+
+            <div class="report">
+                <div class="location">
+                    <h>🌍</h>
+                    <h2 class="cityname">Delhi,</h2>
+                    <h2 class="country">India</h2>
+                </div>
+                <div class="dateSection">
+                    <h3 class="date">22-10-2014 8:16</h3>
+                </div>
+                <div class="temp-sec">
+                    <img id="icon-image" src="Assets/NavImage.png" alt="">
+                    <h1 class="sunny">sunny</h1>
+                    <h1 class="temprature">15</h1>
+                </div>
+
+                <div id="wind-info">
+                    <h2>🍃 ༄</h2>
+                    <h2 class="wind">32 kmp/h</h2>
+                    <sub>wind Speed</sub>
+                </div>
+                <div id="humidity-info">
+                    <h2>💧</h2>
+                    <h2 class="humidity">32 kmp/h</h2>
+                    <sub>Humidity</sub>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

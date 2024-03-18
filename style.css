@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.564);
+    box-shadow: 0px 1px 11px rgb(51, 50, 50);
+}
+
+nav h1 {
+    color: #f6ff00;
+    text-shadow: 2px 3px 1px rgb(10, 8, 8);
+    font-size: 25px;
+}
+
+nav img {
+    height: 60px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+    background-image: url("./Assets/bg-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.all-section {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: rebeccapurple;
+    min-height: 10px;
+    min-width: 25px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+
+
+input {
+    height: 40px;
+    width: 15rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: none;
+    padding-left: 10px;
+    color: rgb(121, 101, 101);
+    caret-color: red;
+}
+
+
+button {
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    background: none;
+    padding: 0 10px;
+}
+
+
+.report {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 270px;
+    width: 500px;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+.report div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.report span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.report img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+sub {
+    margin-top: 9px;
+}
+
+#wind-info,
+#humidity-info {
+    gap: 2px;
+}
+
+sub {
+    color: rgba(232, 230, 230, 0.695);
+}
+
+@media (max-width:385px) {
+    nav h1 {
+        color: #edf50c;
+        text-shadow: 2px 1px 1px rgb(250, 107, 107);
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    nav img {
+        transition: all ease-in-out 0.3s;
+        height: 40px;
+    }
+}
+
+@media (max-width:360px) {
+    form {
+        width: 300px;
+    }
+}
